@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <meta description="Register to Dive Master Center">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <img src="./Imagenes/dive-master-low-resolution-logo-color-on-transparent-background.png" class="logo" alt="dive-master-center-logo">
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="#">Create account</a></li>
+          <li><a href="#" class="highlight-nav-item">Log in</a></li>
+        </ul>
+      </div>
+    </nav>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <h1>Registration to DIVE.</h1>
+      <p>Do you already have an account? <a href="#" class="highlight-a">log in</a></p>
+      <fieldset>
+        <label for="first-name" class="hidden-labels">Enter Your First Name: <input id="first-name" name="first-name" type="text" placeholder="First Name" required /></label>
+        <label for="last-name" class="hidden-labels">Enter Your Last Name: <input id="last-name" name="last-name" type="text" placeholder="Last name" required /></label>
+        <label for="email" class="hidden-labels">Enter Your Email: <input id="email" name="email" type="email" placeholder="Email" required /></label>
+        <label for="new-password" class="hidden-labels">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" placeholder="Password" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account</label>
+        <label for="family-account"><input id="family-account" type="radio" name="account-type" class="inline" /> Family Account</label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture" class="hidden-labels">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+        <label for="age" class="hidden-labels">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" placeholder="Your age (years)" /></label>
+        <label for="referrer" class="hidden-labels">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">How did you hear about us? (select one)</option>
+            <option value="1">News</option>
+            <option value="2">Dive Master YouTube Channel</option>
+            <option value="3">Dive Master Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio" class="hidden-labels">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like swim in the beach..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

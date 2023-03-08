@@ -23,7 +23,6 @@ body {
 
 nav {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.3rem;
@@ -204,4 +203,20 @@ input::file-selector-button {
 
 a {
   color: var(--blue-main);
+}
+
+@media screen and (max-width:450px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 10 0%;
+    margin: 3rem auto;
+    padding: unset;
+    border: unset;
+  }
+  nav {
+    border-bottom: 1px solid #ccc;
+  }
 }
